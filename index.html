@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <a href="#">Create</a>
+    <a href="login.html">Login</a>
+    <form>
+        <input type="text" id="username" placeholder="Your username ..">
+        <input type="text" id="phon" placeholder="Your phone ..">
+        <input type="password" id="pwd" placeholder="Your Password ..">
+        <button id="createAccount">Sign up</button>
+    </form>
+    <script src="main.js"></script>
+    <script>
+        let createBtn = document.getElementById('createAccount'); // Create account button
+        createBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            createAccount();
+        })
+    </script>
+</body>
+
+</html>
