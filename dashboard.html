@@ -1,1 +1,14 @@
 <h1>WELCOME TO DASHBOARD</h1>
+<p id="adminName"></p>
+<button id="logout" onclick="logout();">Logout</button>
+<script>
+    let admin = document.getElementById('adminName');
+    let user = document.cookie; // cookie of logged in user
+    admin.innerText = user.slice(6); // Displaying username
+
+    // Logging out the user;
+    let logout = () =>{ 
+        document.cookie = `admin=master; expires=Jan 10 2010 12:30:00; path='/'`;
+        window.location.href = 'login.html';
+    }
+</script>
